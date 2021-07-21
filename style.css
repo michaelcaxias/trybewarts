@@ -29,6 +29,10 @@ main {
   width: 675px;
 }
 
+.name-input {
+  display: flex;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
