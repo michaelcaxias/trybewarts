@@ -6,7 +6,9 @@
 .header {
   display: flex;
   justify-content: space-between;
+  padding: 8px 25px;
   align-items: center;
+  color: white;
   background-color: rgb(50, 167, 145);
 }
 
@@ -17,6 +19,8 @@
 .trybewarts-login {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  width: 30%;
 }
 
 main {
@@ -25,6 +29,8 @@ main {
 
 #evaluation-form {
   display: flex;
+  background-color: rgb(238, 238, 238);
+  padding: 2%;
   flex-direction: column;
   width: 675px;
 }
