@@ -3,6 +3,8 @@ const password = document.querySelector('#password');
 const buttonNav = document.querySelector('#button-nav');
 const checkBox = document.getElementById('agreement');
 const submitButton = document.querySelector('#submit-btn');
+const textArea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
 
 buttonNav.addEventListener('click', (event) => {
   event.preventDefault();
@@ -20,3 +22,8 @@ checkBox.addEventListener('click', () => {
     submitButton.disabled = true;
   }
 });
+
+textArea.addEventListener('keyup', () => {
+  const size = 500 - textArea.value.length;
+  counter.innerHTML = size;
+})
