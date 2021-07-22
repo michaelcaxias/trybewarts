@@ -36,12 +36,14 @@ textArea.addEventListener('keyup', () => {
   counter.innerHTML = size;
 });
 
-function validateCheckbox() {
+function validateSubject() {
+  let list = '';
   for (let index = 0; index < subjectValue.length; index += 1) {
     if (subjectValue[index].checked) {
-      return subjectValue[index].value;
+      list += `${subjectValue[index].value} `;
     }
   }
+  return list;
 }
 
 function validateRate() {
@@ -66,7 +68,7 @@ submitButton.addEventListener('click', (event) => {
   form.innerHTML += `<p>Email: ${inputEmail.value}</p>`;
   form.innerHTML += `<p>Casa: ${house.value}</p>`;
   form.innerHTML += `<p>Familia: ${validateFamily()}</p>`;
-  form.innerHTML += `<p>Materias: ${validateCheckbox()} </p>`;
+  form.innerHTML += `<p>Materias: ${validateSubject()} </p>`;
   form.innerHTML += `<p>Avaliação: ${validateRate()} </p>`;
   form.innerHTML += `<p>Observações: ${textArea.value} </p>`;
 });
