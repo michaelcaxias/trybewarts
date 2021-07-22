@@ -40,7 +40,7 @@ function validateSubject() {
   let list = '';
   for (let index = 0; index < subjectValue.length; index += 1) {
     if (subjectValue[index].checked) {
-      list += `${subjectValue[index].value} `;
+      list += `${subjectValue[index].value}, `;
     }
   }
   return list;
@@ -67,8 +67,8 @@ submitButton.addEventListener('click', (event) => {
   form.innerHTML = `<p>Nome: ${inputName.value} ${inputSurname.value}</p>`;
   form.innerHTML += `<p>Email: ${inputEmail.value}</p>`;
   form.innerHTML += `<p>Casa: ${house.value}</p>`;
-  form.innerHTML += `<p>Familia: ${validateFamily()}</p>`;
-  form.innerHTML += `<p>Materias: ${validateSubject()} </p>`;
+  form.innerHTML += `<p>Família: ${validateFamily()}</p>`;
+  form.innerHTML += `<p>Matérias: ${validateSubject()} </p>`;
   form.innerHTML += `<p>Avaliação: ${validateRate()} </p>`;
   form.innerHTML += `<p>Observações: ${textArea.value} </p>`;
 });
