@@ -1,6 +1,8 @@
 * {
   padding: 0;
   margin: 0;
+  border: none;
+  font-family: sans-serif;
 }
 
 .header {
@@ -18,52 +20,120 @@
 
 .trybewarts-login {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 30%;
 }
 
 main {
   display: flex;
+  margin: 2%;
 }
 
 #evaluation-form {
   display: flex;
   background-color: rgb(238, 238, 238);
   padding: 2%;
+  border-radius: 5%;
   flex-direction: column;
   width: 675px;
 }
 
-.name-input {
+.center-align {
+  text-align: center;
+}
+
+.sections {
+  margin: 2%;
+  background-color: rgba(0, 0, 0, 0.048);
+  padding: 15px;
+  border-radius: 30px;
+}
+
+.input-container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-control {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 5px;
+  width: 40%;
+  border-style: none;
+}
+
+.input-control:focus {
+
+  /* Descobri como remove outline pelo https://www.w3docs.com/ */
+  outline: none;
+  box-shadow: 0 1px 7px rgb(0, 255, 85);
+}
+
+#second-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+#content-items {
+  width: 250px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-.rate-radio {
+.third-section {
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
+}
+
+.fourth-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.fourth-section p {
+  align-self: flex-end;
+}
+
+#textarea {
+  border-radius: 30px;
+  margin: 2%;
+  padding: 3%;
+}
+
+#textarea:focus {
+  outline: none;
+}
+
+.button {
+  padding: 10px;
+
+  /* consultado em https://developer.mozilla.org/pt-BR/docs/Web/CSS/cursor */
+  cursor: pointer;
+  background: linear-gradient(35deg, blueviolet, rgb(183, 105, 255));
+  color: white;
+  border-radius: 10px;
+}
+
+.button:hover {
+  box-shadow: 1px 1px 5px blueviolet;
+}
+
+.button:disabled {
+  background: linear-gradient(35deg, rgb(70, 70, 70), rgb(139, 139, 139));
+}
+
+.agreement-checkbox {
+  margin: 2%;
 }
 
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
   margin-top: 2%;
-  height: 100px;
   color: white;
-  background-color: rgb(0, 151, 123);
+  background-color: hsl(266, 23%, 34%);
 }
-
-.div-text-area {
-  display: flex;
-  flex-direction: column;
-}
-
-.div-text-area p {
-  align-self: flex-end;
-}
-

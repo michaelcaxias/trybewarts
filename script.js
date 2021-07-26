@@ -11,7 +11,7 @@ const inputSurname = document.querySelector('#input-lastname');
 const inputEmail = document.querySelector('#input-email');
 const house = document.querySelector('#house');
 const familyValue = document.querySelectorAll('.familyValue');
-const rateValue = document.querySelectorAll('.rate');
+const rateValue = document.querySelectorAll('.rate-input');
 const subjectValue = document.querySelectorAll('.subject');
 
 buttonNav.addEventListener('click', (event) => {
