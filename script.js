@@ -64,11 +64,16 @@ function validateFamily() {
 
 submitButton.addEventListener('click', (event) => {
   event.preventDefault();
-  form.innerHTML = `<p>Nome: ${inputName.value} ${inputSurname.value}</p>`;
-  form.innerHTML += `<p>Email: ${inputEmail.value}</p>`;
-  form.innerHTML += `<p>Casa: ${house.value}</p>`;
-  form.innerHTML += `<p>Família: ${validateFamily()}</p>`;
-  form.innerHTML += `<p>Matérias: ${validateSubject()} </p>`;
-  form.innerHTML += `<p>Avaliação: ${validateRate()} </p>`;
-  form.innerHTML += `<p>Observações: ${textArea.value} </p>`;
+  const section = document.createElement('section');
+  section.id = 'infos';
+  form.innerHTML = '';
+  form.appendChild(section);
+  section.innerHTML = `<h1>Olá, ${inputName.value}</h1>`;
+  section.innerHTML += `<p>Nome: ${inputName.value} ${inputSurname.value}</p>`;
+  section.innerHTML += `<p>Email: ${inputEmail.value}</p>`;
+  section.innerHTML += `<p>Casa: ${house.value}</p>`;
+  section.innerHTML += `<p>Família: ${validateFamily()}</p>`;
+  section.innerHTML += `<p>Matérias: ${validateSubject()} </p>`;
+  section.innerHTML += `<p>Avaliação: ${validateRate()} </p>`;
+  section.innerHTML += `<p>Observações: ${textArea.value} </p>`;
 });

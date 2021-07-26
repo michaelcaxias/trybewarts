@@ -137,3 +137,14 @@ footer {
   color: white;
   background-color: hsl(266, 23%, 34%);
 }
+
+#infos {
+  margin: 5%;
+  background-color: rgba(0, 0, 0, 0.048);
+  padding: 5%;
+  border-radius: 30px;
+}
+
+#infos h1 {
+  text-align: center;
+}
