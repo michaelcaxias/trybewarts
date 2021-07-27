@@ -5,6 +5,12 @@
   font-family: sans-serif;
 }
 
+body {
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  backdrop-filter: blur(5px);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -29,7 +35,8 @@ main {
 
 #evaluation-form {
   display: flex;
-  background-color: rgb(238, 238, 238);
+  background-color: rgba(255, 255, 255, 0.493);
+  box-shadow: 1px 1px 10px black;
   padding: 2%;
   border-radius: 5%;
   flex-direction: column;
@@ -42,7 +49,7 @@ main {
 
 .sections {
   margin: 2%;
-  background-color: rgba(0, 0, 0, 0.048);
+  background-color: rgba(0, 0, 0, 0.116);
   padding: 15px;
   border-radius: 30px;
 }
@@ -130,6 +137,7 @@ main {
 
 footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 10px;
@@ -139,12 +147,19 @@ footer {
 }
 
 #infos {
-  margin: 5%;
-  background-color: rgba(0, 0, 0, 0.048);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: large;
+  height: 80%;
+  margin: auto 3%;
+  background-color: rgba(0, 0, 0, 0.13);
   padding: 5%;
   border-radius: 30px;
 }
 
 #infos h1 {
   text-align: center;
+  text-shadow: 1px 3px 1px black;
+  color: white;
 }

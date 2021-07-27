@@ -37,10 +37,10 @@ textArea.addEventListener('keyup', () => {
 });
 
 function validateSubject() {
-  let list = '';
+  const list = [];
   for (let index = 0; index < subjectValue.length; index += 1) {
     if (subjectValue[index].checked) {
-      list += `${subjectValue[index].value}, `;
+      list.push(` ${subjectValue[index].value}`);
     }
   }
   return list;
@@ -68,12 +68,12 @@ submitButton.addEventListener('click', (event) => {
   section.id = 'infos';
   form.innerHTML = '';
   form.appendChild(section);
-  section.innerHTML = `<h1>Olá, ${inputName.value}</h1>`;
-  section.innerHTML += `<p>Nome: ${inputName.value} ${inputSurname.value}</p>`;
-  section.innerHTML += `<p>Email: ${inputEmail.value}</p>`;
-  section.innerHTML += `<p>Casa: ${house.value}</p>`;
-  section.innerHTML += `<p>Família: ${validateFamily()}</p>`;
-  section.innerHTML += `<p>Matérias: ${validateSubject()} </p>`;
-  section.innerHTML += `<p>Avaliação: ${validateRate()} </p>`;
-  section.innerHTML += `<p>Observações: ${textArea.value} </p>`;
+  section.innerHTML = `<h1>Olá, ${inputName.value} ${inputSurname.value}</h1>`;
+  section.innerHTML += `<p><strong>Nome:</strong> ${inputName.value} ${inputSurname.value}</p>`;
+  section.innerHTML += `<p><strong>Email:</strong> ${inputEmail.value}</p>`;
+  section.innerHTML += `<p><strong>Casa:</strong> ${house.value}</p>`;
+  section.innerHTML += `<p><strong>Família:</strong> ${validateFamily()}</p>`;
+  section.innerHTML += `<p><strong>Matérias:</strong> ${validateSubject()} </p>`;
+  section.innerHTML += `<p><strong>Avaliação:</strong> ${validateRate()} </p>`;
+  section.innerHTML += `<p><strong>Observações:</strong> ${textArea.value} </p>`;
 });
