@@ -52,6 +52,7 @@ function validateRate() {
       return rateValue[index].value;
     }
   }
+  return 'Sem avaliação';
 }
 
 function validateFamily() {
@@ -60,6 +61,7 @@ function validateFamily() {
       return familyValue[index].value;
     }
   }
+  return 'Sem família';
 }
 
 submitButton.addEventListener('click', (event) => {
