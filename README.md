@@ -4,12 +4,18 @@
 
 Projeto feito em dupla juntamente com Julio Cesar Arana utilizando os conhecimentos de HTML, CSS e Javascript em 21 de julho de 2021 durante o curso da Trybe.
 
-## 🔧 Funçoes
+## ⭐ Habilidades
 
 - Criar um formulário básico em HTML, CSS e Javascript.
 - Treinar as habilidades com a manipulação do DOM e CSS Flexbox.
 
-## Como iniciar
+## 🔧 Funçoes
+
+- Preencher formulários
+- Contagem de caracteres restantes
+- Recebimento dos dados preenchidos
+
+## 💻 Como iniciar
 
 1. Faça o clone do projeto
 2. Entre no Visual Studio Code
